@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<script src="3.js"></script>
+</head>
+<body>
+<FORM NAME="Sel1">
+    <!-- Анкета -->
+    <TABLE>
+        <TR><TD><B>Фамилия:<B></TD>
+            <TD><INPUT NAME="Family" SIZE=20
+                  onBlur="this.value=this.value.toUpperCase()"></TD></TR>
+        <TR><TD><B>Имя:<B></TD>
+            <TD><INPUT NAME="Name" SIZE=20
+                  onBlur="this.value=this.value.toUpperCase()"></TD></TR>
+        <TR><TD><B>Возраст:<B></TD>
+            <TD><INPUT NAME="Age" SIZE=3 VALUE="18"
+                  onBlur="this.value=CheckAge(this.value)"
+                  onFocus="this.select()"></TD></TR>
+        <TR><TD><B>Телефон:<B></TD>
+            <TD><INPUT NAME="Phone" SIZE=10></TD></TR>
+    </TABLE>
+    <!-- Кнопки готовности и сброса -->
+    <INPUT TYPE="button" VALUE="Готово" onClick="Complete();"></INPUT>
+    <INPUT TYPE="reset" VALUE="Сброс"></INPUT>
+</FORM>	
+</body>
+</html>

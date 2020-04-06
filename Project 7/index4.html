@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+	<script src="4.js"></script>
+</head>
+<body>
+<FORM NAME="Sel2">
+	<label>
+		<INPUT
+			TYPE="radio"
+			NAME="Code"
+			VALUE="Good"
+			onClick="if(this.checked) checkRadio(this.form,this.value);"
+		>Явка в норме</INPUT>
+	</label>
+	<BR />
+	<label>
+		<INPUT
+			TYPE="radio"
+			NAME="Code"
+			VALUE="Bad"
+			onClick="if(this.checked) checkRadio(this.form,this.value);"
+		>Явка провалена</INPUT>
+	</label>
+	<TEXTAREA NAME="Letter" ROWS="3" COLS="35"> </TEXTAREA>
+	<INPUT
+	TYPE="button"
+	VALUE="Готово"
+	onClick="alert(document.Sel2.Letter.value);"
+	></INPUT>
+	<INPUT TYPE="reset" VALUE="Сброс" /></INPUT>
+    </FORM>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="1.js"></script>
+</head>
+<body>
+<div id="ex1"></div>
+<FORM NAME="Test">
+	Флажок <INPUT TYPE="checkbox" NAME="ch" onClick="chClick();"></INPUT>
+    <INPUT TYPE="button" NAME="bt" VALUE="Щелкни здесь!" onClick="btnClick();"></INPUT>
+    <INPUT TYPE="RADIO"  NAME="Sex" VALUE ="Man" CHECKED>Мужской
+    <INPUT TYPE="RADIO"  NAME="Sex" VALUE ="Woman">Женский
+    <BR>Состояние переключателей можно изменить и этой кнопкой
+    <INPUT TYPE="button" VALUE="Смена состояния" onClick="btn2Click();"></INPUT>
+	<br>
+	<br>
+	<SELECT NAME="Item" SIZE=5>
+		<OPTION VALUE = "tea" SELECTED>Чай</OPTION>
+		<OPTION VALUE = "coffee">Кофе</OPTION>
+		<OPTION VALUE = "milk">Молоко</OPTION>
+		<OPTION VALUE = "cocoa">Какао</OPTION>
+		<OPTION VALUE = "juice">Сок</OPTION>
+	</SELECT>
+	<INPUT TYPE="button" VALUE="Пусть кофе" onClick="Test.Item.options[1].selected=true;"></INPUT>
+	<INPUT TYPE="button" VALUE="Посмотрим"onClick="btn3Click();"></INPUT>
+		
+</FORM>
+</body>
+</html>
