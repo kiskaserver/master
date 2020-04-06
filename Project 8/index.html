@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="1.js"></script>
+</head>
+<body>
+<div id="ex1"></div>
+<FORM NAME="Sel3">
+    <TABLE>
+        <TR>
+			<TD>
+				<B>Идентификатор:<B>
+			</TD>
+            <TD>
+				<INPUT NAME="Id" SIZE=20 onBlur="this.value=this.value.toUpperCase()"></INPUT>
+			</TD>
+		</TR>
+        <TR>
+			<TD>
+				<B>Пароль:<B>
+			</TD>
+            <TD>
+				<INPUT TYPE="password" NAME="Pwd" SIZE=20 onFocus="this.select();"></INPUT>
+			</TD>
+		</TR>
+        <TR>
+			<TD>
+				<B>Проверка пароля:<B>
+			</TD>
+            <TD>
+				<INPUT TYPE="password" NAME="Pwd1" SIZE=20 onFocus="this.select();"></INPUT>
+			</TD>
+		</TR>
+    </TABLE>
+    <INPUT TYPE="button" VALUE="Готово" onClick="Complete();"></INPUT>
+    <INPUT TYPE="reset" VALUE="Сброс"></INPUT>
+</FORM>
+</body>
+</html>
